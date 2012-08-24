@@ -73,7 +73,7 @@ public class main extends JavaPlugin {
      getConfig().addDefault("block.lava", true);
      getConfig().addDefault("block.egg", true);
      getConfig().addDefault("block.tnt", true);
-     getConfig().addDefault("block.drowning", true);
+     getConfig().addDefault("block.drowning", getConfig().get("block.drowning", true)); // backward compatibility
      getConfig().addDefault("block.creeper", true);
      getConfig().addDefault("messages.cantkill", "You don't have permissions for kill a villager.");
      getConfig().addDefault("messages.cantkill_all", "Killing villagers is disabled on this server.");
